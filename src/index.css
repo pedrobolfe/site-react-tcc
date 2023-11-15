@@ -1,0 +1,167 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(8, 8, 8, 0.87);
+  background-color: #f0f0f0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #777575;
+}
+
+.navbar li {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #d1f3ee;
+}
+.person-card {
+  background-color: #ddedeb; 
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px;
+  width: 350px; /* Ajuste a largura conforme desejado */
+  height: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.person-card img {
+  width: 100px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.person-card img:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 10% ao passar o mouse */
+}
+
+.person-card p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.person-card .social-icons {
+  margin-top: 20px;
+}
+
+.person-card .social-icons a {
+  margin-right: 15px;
+  color: rgb(20, 17, 17);
+}
+.person-card .social-icons a:hover {
+  color: rgb(224, 25, 25);
+}
+
+.api-example form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.inputbox {
+  flex: 0 0 68%;
+  margin-bottom: 20px;
+}
+
+/* Adapte as cores conforme necessário */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Cor semelhante à do seu footer */
+  border-radius: 4px;
+  font-size: 16px;
+  color: #363333; /* Cor do texto */
+  background-color: #ddedeb;
+}
+
+/* Adicionando algum estilo aos campos de input quando em foco */
+input:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5); /* Adiciona um efeito de sombra ao focar */
+}
+
+/* Adicionando algum estilo ao botão de submit */
+form button {
+  margin-top: 50px;
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Adicionando algum estilo ao botão de submit quando em hover */
+form button:hover {
+  background-color: #3185fc;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adicione um espaçamento inferior para separar do próximo conteúdo */
+}
+
+.utilization-title {
+  margin-bottom: 10px; /* Adicione um espaçamento inferior para separar do formulário e iframe */
+}
+
+.api-example {
+  display: flex;
+  gap: 20px;
+}
+
+#iframe {
+  margin-top: 30px;
+  border-radius: 30px;
+  border-color: rgb(255, 255, 255);
+}
