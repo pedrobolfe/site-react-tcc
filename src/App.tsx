@@ -85,7 +85,7 @@ function App() {
       
       <div id="sobre">
 
-        <h1>TCC sobre Geolocalização</h1>
+        <h1>Trabalho de Conclusão de Curso sobre API para apresentar dados de Geoprocessamento</h1>
         <section>
           <h2>Sobre o TCC</h2>
           <p>
