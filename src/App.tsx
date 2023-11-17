@@ -85,12 +85,11 @@ function App() {
       
       <div id="sobre">
 
-        <h1>Trabalho de Conclusão de Curso sobre API para apresentar dados de Geoprocessamento</h1>
+        <h1>API REST para consulta de dados geolocalizados</h1>
         <section>
-          <h2>Sobre o TCC</h2>
+          <h2>Sobre o projeto</h2>
           <p>
-            Este trabalho aborda a utilização de uma API de geolocalização para calcular rotas entre dois endereços,
-            estimar o tempo de viagem, calcular a distância e explorar outras funcionalidades relacionadas.
+            Neste projeto, desenvolvido como Trabalho de Conclusão de Curso para o IFPR Campus Cascavel, foi desenvolvida uma API REST para exibir dados de geoprocessamento. A necessidade surge com a distância entre o local de estudo e os endereços dos discentes como fator que pode impactar a motivação estudantil, dessa forma o presente Software visa apresentar dados geolocalizados para futuras contibuição em análises de dados que mapeiam e identifiquem o impacto causado pela distância em possíveis evasões ou desmotivações dos alunos no IFPR Campus Cascavel.  
           </p>
         </section>
 
@@ -98,8 +97,7 @@ function App() {
         <section>
           <h2>Dados da API de Geolocalização</h2>
           <p>
-            A API utilizada fornece informações precisas sobre geolocalização, permitindo a obtenção de rotas, tempo de
-            viagem e distância entre diferentes locais.
+            A API desenvolvida fornece informações precisas sobre geolocalização, tais como distância, rotas e tempo de viagem entre dois endereços. Outras funcionalidades relacionadas tamém podem ser exploradas em projetos futuros.
           </p>
           {/* Adicione mais informações sobre a API conforme necessário */}
         </section>
