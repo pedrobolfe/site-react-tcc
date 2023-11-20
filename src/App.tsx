@@ -1,8 +1,6 @@
 // import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import React, { useState, FormEvent, ChangeEvent } from 'react';
+import { useState, ChangeEvent } from 'react';
 
 // Importe o CSS do Font Awesome
 import 'font-awesome/css/font-awesome.min.css';
@@ -40,8 +38,8 @@ function App() {
     const { cep, num_cep } = formData;
     // const cep = document.getElementById('cep');
 
-    const url_api = `http://127.0.0.1:8000/car_data/${cep}/${num_cep}/IFPR%20-%20Cascavel/85814800/2020`;
-  
+    const url_api = `https://geolocation-api-ifpr.koyeb.app/car_data/${cep}/${num_cep}/ifpr%20-%20campus%20cascavel/85814-800/2020`;
+    
     try {
       const dados_api = await fetch(url_api);
       const data_api: ApiResult = await dados_api.json();
@@ -63,7 +61,7 @@ function App() {
   
         const latlon_ini = data_api.coordenadas_inicio;
         const latlon_fim = data_api.coordenadas_destino;
-        const url_map = `http://127.0.0.1:8000/rota?long_org=${latlon_ini[1]}&lat_org=${latlon_ini[0]}&long_dest=${latlon_fim[1]}&lat_dest=${latlon_fim[0]}`;
+        const url_map = `https://geolocation-api-ifpr.koyeb.app/rota?long_org=${latlon_ini[1]}&lat_org=${latlon_ini[0]}&long_dest=${latlon_fim[1]}&lat_dest=${latlon_fim[0]}`;
         mapaElement.src = url_map;
         console.log(url_map);
       }
@@ -89,15 +87,14 @@ function App() {
         <section>
           <h2>Sobre o projeto</h2>
           <p>
-            Neste projeto, desenvolvido como Trabalho de Conclusão de Curso para o IFPR Campus Cascavel, foi desenvolvida uma API REST para exibir dados de geoprocessamento. A necessidade surge com a distância entre o local de estudo e os endereços dos discentes como fator que pode impactar a motivação estudantil, dessa forma o presente Software visa apresentar dados geolocalizados para futuras contibuição em análises de dados que mapeiam e identifiquem o impacto causado pela distância em possíveis evasões ou desmotivações dos alunos no IFPR Campus Cascavel.  
+            Neste projeto, desenvolvido  como Trabalho de Conclusão de Curso para o IFPR Campus Cascavel, foi desenvolvida uma API REST para exibir dados de geoprocessamento. A necessidade surge com a distância entre o local de estudo e os endereços dos discentes como fator que pode impactar a motivação estudantil, dessa forma o presente Software visa apresentar dados geolocalizados para futuras contibuição em análises de dados que mapeiam e identifiquem o impacto causado pela distância em possíveis evasões ou desmotivações dos alunos no IFPR Campus Cascavel.  
           </p>
         </section>
-
 
         <section>
           <h2>Dados da API de Geolocalização</h2>
           <p>
-            A API desenvolvida fornece informações precisas sobre geolocalização, tais como distância, rotas e tempo de viagem entre dois endereços. Outras funcionalidades relacionadas tamém podem ser exploradas em projetos futuros.
+            A API desenvolvida fornece informações precisas sobre geolocalização, tais como distância, rotas e tempo de viagem entre dois endereços.  Outras funcionalidades relacionadas tamém podem ser exploradas em projetos futuros.
           </p>
           {/* Adicione mais informações sobre a API conforme necessário */}
         </section>
